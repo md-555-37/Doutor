@@ -31,7 +31,7 @@ export * from './cli/log-extensions.js';
 export * from './cli/metricas.js';
 export * from './cli/metricas-analistas.js';
 export type {
-  DoutorGlobalFlags,
+  SenseiGlobalFlags,
   FiltrosProcessados,
   FixTypesOptions,
   FlagsBrutas,

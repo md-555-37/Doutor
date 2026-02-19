@@ -337,7 +337,7 @@ async function executarFixTypes(options: FixTypesOptions): Promise<void> {
   if (verbose) {
     const fs = await import('node:fs/promises');
     const path = await import('node:path');
-    const reportCaminho = path.join(PROJETO_RAIZ, '.doutor', 'fix-types-analise.json');
+    const reportCaminho = path.join(PROJETO_RAIZ, '.sensei', 'fix-types-analise.json');
     await fs.mkdir(path.dirname(reportCaminho), {
       recursive: true
     });

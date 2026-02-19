@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// @doutor-disable seguranca vulnerabilidade-seguranca
+// @sensei-disable seguranca vulnerabilidade-seguranca
 import type { NodePath } from '@babel/traverse';
 import type { CallExpression, NewExpression, Node } from '@babel/types';
 import { traverse } from '@core/config/traverse.js';

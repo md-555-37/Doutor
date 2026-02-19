@@ -99,7 +99,7 @@ export async function generateNotices({
   const projectNome = `${pkg.name}@${pkg.version}`;
   const projectLicenca = pkg.license || 'UNSPECIFIED';
   let results: Record<string, RenderPackageMeta> | null = null;
-  const cacheCaminho = path.join(root, '.doutor', 'licenses.json');
+  const cacheCaminho = path.join(root, '.sensei', 'licenses.json');
   try {
     const buf = await fs.readFile(cacheCaminho, 'utf-8');
     results = JSON.parse(buf);
@@ -153,7 +153,7 @@ export async function generateNotices({
     }
   }
   try {
-    const dir = path.join(root, '.doutor');
+    const dir = path.join(root, '.sensei');
     await fs.mkdir(dir, {
       recursive: true
     });

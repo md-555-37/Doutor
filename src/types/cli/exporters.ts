@@ -32,8 +32,8 @@ export interface RelatorioJson {
       exclude?: string[];
       globalExclude?: string[];
     };
-    /** Versão do Doutor */
-    doutorVersion?: string;
+    /** Versão do Sensei */
+    senseiVersion?: string;
     /** Nome do projeto */
     projectNome?: string;
   };

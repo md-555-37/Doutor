@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// @doutor-disable tipo-literal-inline-complexo
+// @sensei-disable tipo-literal-inline-complexo
 // Justificativa: tipos locais para reescrita de imports
 /**
  * Helper puro para reescrever imports relativos quando um arquivo é movido.

@@ -14,7 +14,7 @@ export function comandoAnalistas(): Command {
     doc?: string;
   }) => {
     try {
-      if (process.env.DOUTOR_TEST_FAST === '1') {
+      if (process.env.SENSEI_TEST_FAST === '1') {
         if (opts.json) {
           log.info(JSON.stringify({
             total: 0,

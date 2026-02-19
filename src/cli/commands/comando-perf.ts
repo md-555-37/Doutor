@@ -104,8 +104,8 @@ export function comandoPerf(): Command {
       const parent = cmd.parent?.opts?.() || {};
       const dir = parent.dir ? String(parent.dir) : config.PERF_SNAPSHOT_DIR;
       const metricas = (globalThis as unknown as {
-        __ULTIMAS_METRICAS_DOUTOR__?: Partial<MetricaExecucaoLike> | null;
-      }).__ULTIMAS_METRICAS_DOUTOR__;
+        __ULTIMAS_METRICAS_SENSEI__?: Partial<MetricaExecucaoLike> | null;
+      }).__ULTIMAS_METRICAS_SENSEI__;
       const snap = await gerarBaseline(dir, metricas || undefined);
       if (parent.json) {
         console.log(JSON.stringify({

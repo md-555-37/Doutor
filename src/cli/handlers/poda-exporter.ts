@@ -49,7 +49,7 @@ export async function exportarRelatoriosPoda(options: PodaExportOptions): Promis
 
     // Gerar timestamp único para os arquivos
     const ts = new Date().toISOString().replace(/[:.]/g, '-');
-    const nomeBase = `doutor-poda-${ts}`;
+    const nomeBase = `sensei-poda-${ts}`;
 
     // Gerar relatório Markdown
     const caminhoMd = path.join(dir, `${nomeBase}.md`);

@@ -424,7 +424,7 @@ export async function executarInquisicao(fileEntriesComAst: FileEntryWithAst[], 
   // Agregação de métricas
   let metricasExecucao: MetricaExecucao | null = null;
   if (config.ANALISE_METRICAS_ENABLED) {
-    const metricasGlobais: MetricasGlobais = (globalThis as unknown as Record<string, unknown>).__DOUTOR_METRICAS__ as MetricasGlobais || {
+    const metricasGlobais: MetricasGlobais = (globalThis as unknown as Record<string, unknown>).__SENSEI_METRICAS__ as MetricasGlobais || {
       parsingTimeMs: 0,
       cacheHits: 0,
       cacheMiss: 0
@@ -496,8 +496,8 @@ export async function executarInquisicao(fileEntriesComAst: FileEntryWithAst[], 
 export function registrarUltimasMetricas(metricas: MetricaExecucao | undefined): void {
   try {
     (globalThis as unknown as {
-      __ULTIMAS_METRICAS_DOUTOR__?: MetricaExecucao | null;
-    }).__ULTIMAS_METRICAS_DOUTOR__ = metricas || null;
+      __ULTIMAS_METRICAS_SENSEI__?: MetricaExecucao | null;
+    }).__ULTIMAS_METRICAS_SENSEI__ = metricas || null;
   } catch {
     /* ignore */
   }

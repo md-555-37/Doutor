@@ -18,7 +18,7 @@ export class PluginRegistry {
     this.config = {
       enabled: ['core'],
       autoload: true,
-      registry: '@doutor/plugins',
+      registry: '@sensei/plugins',
       ...config
     };
     this.userConfiguredEnabled = !!config?.enabled;

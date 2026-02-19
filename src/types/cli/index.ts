@@ -5,7 +5,7 @@
 
 // Options e Filtros
 export type {
-  DoutorGlobalFlags,
+  SenseiGlobalFlags,
   FiltrosProcessados,
   FixTypesOptions,
   FlagsBrutas,

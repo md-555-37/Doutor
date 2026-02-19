@@ -7,7 +7,7 @@ export async function gerarRelatorioReestruturarMarkdown(caminho: string, movime
   const total = movimentos.length;
   const simulado = opcoes?.simulado;
   const origem = opcoes?.origem ?? 'desconhecido';
-  const preset = opcoes?.preset ?? 'doutor';
+  const preset = opcoes?.preset ?? 'sensei';
   const conflitos = opcoes?.conflitos ?? 0;
   const linhas: string[] = [];
   linhas.push(`# ${RelatorioMensagens.reestruturar.titulo}`);
@@ -38,7 +38,7 @@ export async function gerarRelatorioReestruturarJson(caminho: string, movimentos
   const json = {
     simulado: Boolean(opcoes?.simulado),
     origem: opcoes?.origem ?? 'desconhecido',
-    preset: opcoes?.preset ?? 'doutor',
+    preset: opcoes?.preset ?? 'sensei',
     conflitos: opcoes?.conflitos ?? 0,
     totalMovimentos: movimentos.length,
     movimentos,
